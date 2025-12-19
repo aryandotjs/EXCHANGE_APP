@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { getDepth, getTicker } from "../utils/httpinitials";
-import { Depthtype } from "../utils/types";
-import { data } from "react-router-dom";
 import { signalingManager } from "../utils/signalingmanager";
 import { Ask } from "./ask";
 import { Bid } from "./bid";

@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Allmarkets } from "../comp/allmarkets";
-import axios from "axios";
 import { getMarkets } from "../utils/httpinitials";
 
 export default function Market() {

@@ -11,8 +11,8 @@ export function Ask({ data }: any) {
 
   return (
     <div className="w-full pr-1">
-      {bars.reverse().map((row: any) => (
-        <div className="relative h-5 my-0.5">
+      {bars.reverse().map((row: any, index: any) => (
+        <div key={index} className="relative h-5 my-0.5">
           <div
             className="bg-red-500/40 absolute top-0 right-0 h-5 transition-[width] duration-500 ease-in-out"
             style={{ width: `${(row[1] / maxTotal) * 100}%` }}
