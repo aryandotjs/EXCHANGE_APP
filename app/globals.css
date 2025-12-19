@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0e0f14;
 }
 
 @theme inline {
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0e0f14;
     --foreground: #ededed;
   }
 }
@@ -23,4 +23,21 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+/* Make scrollbars thin and styled nicely */
+::-webkit-scrollbar {
+  width: 2px;
+  /* thin scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(251, 251, 251, 0.6);
+  /* gray-ish */
+  border-radius: 9999px;
+  /* rounded ends */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* transparent track */
 }
